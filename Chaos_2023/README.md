@@ -3,10 +3,11 @@
 This repo contains code to simulate: 
 
 1: A single Izhikevich neuron and then use an Unscented Kalman Filter (UKF) to
-estimate the underlying parameters of the model. 
+estimate the model's underlying parameters. 
+
 2: A small network of coupled Izhikevich neurons under different
 connection topologies and coupling strengths, then uses an Unscented Kalman Filter (UKF) to
-estimate the underlying coupling parameters (the connectivity of the network). 
+estimate the underlying coupling parameters (i.e., the network's connectivity). 
 
 It also includes a plot script to visualize the results.
 
@@ -30,17 +31,11 @@ Chaos: An Interdisciplinary Journal of Nonlinear Science 33 (4), 043123*.
 Run the main simulation + estimation pipeline:
 
 ```bash
-python main.py
+python ukf_coupling.py or python ukf_par.py depending on which directory you are.
 ```
 
 This will:
-- simulate the selected topologies and coupling strengths,
-- save spike data to `spikedata.pkl`,
-- save UKF coupling estimates to `mn4_scores_up.npy`,
-- save order parameters to `mn4_korder_up.npy`.
+- simulate the selected model (network or single-node)
+- deploy filterpy's UKF algorithm to estimate the model's parameters
+- plot the results.
 
-Then plot everything with:
-
-```bash
-python plotting.py
-```
