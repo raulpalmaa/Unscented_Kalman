@@ -2,20 +2,14 @@
 
 This repository contains the simulation and analysis code for two related
 papers on synchronization dynamics in small networks of coupled oscillators
-and Izhikevich neurons, using an Unscented Kalman Filter (UKF) to estimate
-coupling parameters from spike/phase data.
+and Izhikevich neurons. Both use an Unscented Kalman Filter (UKF) to estimate
+system parameters — particularly coupling strengths — from data, using either
+full time series or spike timing alone
 
 ## Repository structure
 
 Each subdirectory is self-contained and has its own README with details on
 what the code does, how to run it, and paper-specific notes.
-
-## Papers
-
-Codes and supplementary info of the papers 1:https://doi.org/10.1063/5.0144499 (2023) and 2: https://doi.org/10.1016/j.chaos.2024.114837 (2024)
-
-Resources
-
 
 - **Chaos 2023** — *Parameter and coupling estimation in small networks of Izhikevich’s neurons* - https://doi.org/10.1063/5.0144499
 - **CSF 2024** — *Inferring the connectivity of coupled oscillators from event timing analysis* - https://doi.org/10.1016/j.chaos.2024.114837
