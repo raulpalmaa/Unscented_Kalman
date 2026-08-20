@@ -45,20 +45,6 @@ It builds on our previous work (see the Chaos2023 directory).
 └── lol_up.pkl              # saved spike time data per topology/coupling (generated)
 ```
 
-## Requirements
-
-- Python 3.x
-- `numpy`
-- `filterpy`
-- `matplotlib`
-- `pandas`
-
-Install with:
-
-```bash
-pip install numpy filterpy matplotlib pandas
-```
-
 ## Usage
 
 Run the main simulation + estimation pipeline:
