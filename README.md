@@ -17,16 +17,17 @@ Codes and supplementary info of the papers 1:https://doi.org/10.1063/5.0144499 (
 Resources
 
 
-- **Paper 1** — *[Parameter and coupling estimation in small networks of Izhikevich’s neurons]*. [https://doi.org/10.1063/5.0144499]
-- **Paper 2** — *[Inferring the connectivity of coupled oscillators from event timing analysis]*. [https://doi.org/10.1016/j.chaos.2024.114837]
+- **Chaos 2023** — *Parameter and coupling estimation in small networks of Izhikevich’s neurons* - https://doi.org/10.1063/5.0144499
+- **CSF 2024** — *Inferring the connectivity of coupled oscillators from event timing analysis* - https://doi.org/10.1016/j.chaos.2024.114837
 
 ## Requirements
 
 Both projects rely on filterpy, which can be installed with:
 
 ```bash
-pip install numpy filterpy matplotlib pandas
+pip install numpy filterpy 
 ```
+Read the documentation: https://filterpy.readthedocs.io/en/latest/
 
 ## Citation
 If you use this code, please cite the relevant papers.
