@@ -34,12 +34,8 @@ It builds on our previous work (see the Chaos2023 directory).
 .
 ├── izk_b.py           # Izhikevich simulator used to generate the spikes 
 ├── kuramoto.py        # Kuramoto simulator used for the UKF step
-├── ukf_ph.py          # Main script.
+├── ukf_ph.py          # Main script: simulation + spike detection + phase extraction + UKF
 ├── plotting.py        # 1: loads and plots the estimated adjacency matrix entries. 2: loads saved spike times and plots rasters
-
-├── kuramoto_b.py         # Izhikevich/Kuramoto simulator used for spike simulation
-├── main.py                # simulation + spike detection + phase extraction + UKF
-├── raster_plot.py         # loads saved spike times and plots rasters
 ├── mn4_scores_up.npy       # saved UKF coupling estimates (generated)
 ├── mn4_korder_up.npy       # saved Kuramoto order parameters (generated)
 └── lol_up.pkl              # saved spike time data per topology/coupling (generated)
@@ -72,4 +68,3 @@ python plotting.py
   is extrapolated rather than measured. This margin is not adaptive to the actual
   spike rate, so it may over- or under-trim depending on topology/coupling.
 
-Add your license of choice here (MIT, GPL, etc).
