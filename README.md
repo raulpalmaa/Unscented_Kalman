@@ -12,8 +12,13 @@ what the code does, how to run it, and paper-specific notes.
 
 ## Papers
 
-- **Paper 1** — *[Title]*. [link to paper / DOI / arXiv]
-- **Paper 2** — *[Title]*. [link to paper / DOI / arXiv]
+Codes and supplementary info of the papers 1:https://doi.org/10.1063/5.0144499 (2023) and 2: https://doi.org/10.1016/j.chaos.2024.114837 (2024)
+
+Resources
+
+
+- **Paper 1** — *[Parameter and coupling estimation in small networks of Izhikevich’s neurons]*. [https://doi.org/10.1063/5.0144499]
+- **Paper 2** — *[Inferring the connectivity of coupled oscillators from event timing analysis]*. [https://doi.org/10.1016/j.chaos.2024.114837]
 
 ## Requirements
 
