@@ -1,4 +1,4 @@
-# Coupled Oscillator/Neuron Network Synchronization — Code Repository
+# Network inference with Unscented Kalman Filter (UKF)
 
 This repository contains the simulation and analysis code for two related
 papers on synchronization dynamics in small networks of coupled oscillators
