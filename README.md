@@ -3,8 +3,8 @@
 This repository contains the simulation and analysis code for two related
 papers on synchronization dynamics in small networks of coupled oscillators
 and Izhikevich neurons. Both use an Unscented Kalman Filter (UKF) to estimate
-system parameters, particularly coupling strengths — from data, using either
-full time series or spike timing alone
+system parameters, particularly coupling strengths, from data, using either
+full time series or spike timing alone.
 
 ## Repository structure
 
