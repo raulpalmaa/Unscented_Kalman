@@ -22,7 +22,6 @@ Both projects rely on filterpy, which can be installed with:
 ```bash
 pip install numpy filterpy matplotlib pandas
 ```
-Check each subdirectory's README for any paper-specific dependencies.
 
 ## Citation
-If you use this code, please cite the relevant paper(s):
+If you use this code, please cite the relevant papers.
