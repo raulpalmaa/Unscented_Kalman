@@ -5,8 +5,9 @@ connection topologies and coupling strengths, extracts spike times, converts the
 into continuous phase signals, and then uses an Unscented Kalman Filter (UKF) to
 estimate the underlying coupling parameters from those phases. 
 It also includes a raster plot script to visualize the spiking activity.
-It is a set of minimal scripts that encode the main idea presented in *Inferring the connectivity of coupled oscillators from event timing analysis, RP Aristides, HA Cerdeira, C Masoller, G Tirabassi - Chaos, Solitons & Fractals 182, 114837*
-As you'll see, it builds on our previous work (see the Chaos2023 directory).
+It is a set of minimal scripts that encode the main idea presented in *Inferring the connectivity of coupled oscillators from event timing analysis, RP Aristides, HA Cerdeira, C Masoller, G Tirabassi - Chaos, Solitons & Fractals 182, 114837*.
+
+It builds on our previous work (see the Chaos2023 directory).
 
 ## What it does
 
@@ -31,7 +32,11 @@ As you'll see, it builds on our previous work (see the Chaos2023 directory).
 
 ```
 .
-├── kuramoto.py          # Izhikevich/Kuramoto simulator used for the UKF step
+├── izk_b.py           # Izhikevich simulator used to generate the spikes 
+├── kuramoto.py        # Kuramoto simulator used for the UKF step
+├── ukf_ph.py          # Main script.
+├── plotting.py        # 1: loads and plots the estimated adjacency matrix entries. 2: loads saved spike times and plots rasters
+
 ├── kuramoto_b.py         # Izhikevich/Kuramoto simulator used for spike simulation
 ├── main.py                # simulation + spike detection + phase extraction + UKF
 ├── raster_plot.py         # loads saved spike times and plots rasters
@@ -64,27 +69,21 @@ python main.py
 
 This will:
 - simulate the selected topologies and coupling strengths,
-- save spike data to `lol_up.pkl`,
+- save spike data to `spikedata.pkl`,
 - save UKF coupling estimates to `mn4_scores_up.npy`,
 - save order parameters to `mn4_korder_up.npy`.
 
-Then generate raster plots from the saved spikes:
+Then plot everything with:
 
 ```bash
-python raster_plot.py
+python plotting.py
 ```
 
-## Notes / known limitations
+## Notes
 
 - The phase-reconstruction trims a fixed margin (5000 samples) from each end of
   the trace, since the first "spike" is a placeholder at t=0 and the last stretch
   is extrapolated rather than measured. This margin is not adaptive to the actual
   spike rate, so it may over- or under-trim depending on topology/coupling.
-- The outer simulation loop silently swallows exceptions (`try/except: pass`),
-  so failed runs won't raise errors — useful to know if results look incomplete.
-- Random initial conditions are not seeded, so runs are not fully reproducible
-  even though the simulator itself uses a fixed seed.
-
-## License
 
 Add your license of choice here (MIT, GPL, etc).
