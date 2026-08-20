@@ -28,4 +28,5 @@ Read the documentation: https://filterpy.readthedocs.io/en/latest/
 If you use this code, please cite the relevant papers:
 
 1: Parameter and coupling estimation in small networks of Izhikevich’s neurons. RP Aristides, AJ Pons, HA Cerdeira, C Masoller, G Tirabassi. Chaos: An Interdisciplinary Journal of Nonlinear Science 33 (4), 043123
+
 2: Inferring the connectivity of coupled oscillators from event timing analysis, RP Aristides, HA Cerdeira, C Masoller, G Tirabassi. Chaos, Solitons & Fractals 182, 114837 
