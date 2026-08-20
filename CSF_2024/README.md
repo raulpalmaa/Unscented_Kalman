@@ -1,10 +1,12 @@
-# Coupled Izhikevich Network — Spike-to-Phase UKF Estimation
+# Estimating coupling from spiking of neurons with the UKF
 
 This repo simulates a small network of coupled Izhikevich neurons under different
 connection topologies and coupling strengths, extracts spike times, converts them
 into continuous phase signals, and then uses an Unscented Kalman Filter (UKF) to
-estimate the underlying coupling parameters from those phases. It also includes a
-raster plot script to visualize the spiking activity.
+estimate the underlying coupling parameters from those phases. 
+It also includes a raster plot script to visualize the spiking activity.
+It is a set of minimal scripts that encode the main idea presented in *Inferring the connectivity of coupled oscillators from event timing analysis, RP Aristides, HA Cerdeira, C Masoller, G Tirabassi - Chaos, Solitons & Fractals 182, 114837*
+As you'll see, it builds on our previous work (see the Chaos2023 directory).
 
 ## What it does
 
